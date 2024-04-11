@@ -33,6 +33,9 @@
         .fotoProfile {
             width: 100px;
             height: 100px;
+            border-radius: 50%;
+            border: 2px solid black;
+            box-shadow: 3px 3px 10px 2px #333399;
         }
 
         .fotoContainer {
@@ -53,7 +56,33 @@
     
         .titleProfile{
             color: white;
-            
+
+        }
+
+        .btnUniversal {
+            border: none;
+            padding: 0.5rem 0.7rem;
+            margin: 10px 10px 0 0;
+            font-family: "Lora", serif;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all;
+            transition-duration: 1s;
+        }
+
+        .btnUniversal.contact {
+            background-color: #9fc8fd;
+        
+        }
+
+        .btnUniversal.hire {
+            background-color: #81fae4;
+        }
+
+        .btnUniversal:hover{
+            transform: scale(1.1);
         }
 
     </style>
@@ -67,6 +96,10 @@
             <div class="profileContainer">
                 <div class="nameProfile">Anak Hilang</div>
                 <div class="titleProfile">Orang Gabut & Hidup seperti Larry</div>
+                <div>
+                    <button class="btnUniversal contact">Contact</button>
+                    <button class="btnUniversal hire">Don't Hire Me</button>
+                </div>
             </div>
         </div>
     </header>
