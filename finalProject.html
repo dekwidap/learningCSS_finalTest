@@ -5,25 +5,69 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Final Project</title>
 
+
+    <!-- Font Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+
+
     <style>
         body {
             background-color: rgb(245, 245, 245);
             padding: 0;
             margin: 0;
+            font-family: "Lora", serif;
         }
         header {
-            background: #4568DC;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #B06AB3, #4568DC);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #B06AB3, #4568DC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            background: #4568DC;
+            background: -webkit-linear-gradient(to right, #B06AB3, #4568DC);  
+            background: linear-gradient(to right, #B06AB3, #4568DC);
+            padding: 20px;
+        }
+
+        .headerContainer {
+            display: flex;
+        }
+
+        .fotoProfile {
+            width: 100px;
+            height: 100px;
+        }
+
+        .fotoContainer {
+            flex: 1;
+            text-align: center;
+        }
+
+        .profileContainer {
+            flex: 1;
+        }
+
+        .nameProfile {
+            font-size: 1.5rem;
+            color: white;
+            font-weight: 600;
 
         }
+    
+        .titleProfile{
+            color: white;
+            
+        }
+
     </style>
 </head>
 <body>
     <header>
-        <div>
-            <div>Ini untuk Photo</div>
-            <div>Ini untuk Profile</div>
+        <div class="headerContainer">
+            <div class="fotoContainer">
+                <img class="fotoProfile" src="neonMask.jpeg" alt="Neon Mask">
+            </div>
+            <div class="profileContainer">
+                <div class="nameProfile">Anak Hilang</div>
+                <div class="titleProfile">Orang Gabut & Hidup seperti Larry</div>
+            </div>
         </div>
     </header>
     
